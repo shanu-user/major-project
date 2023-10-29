@@ -1,0 +1,15 @@
+.files{
+    border: 1px solid black;
+}
+.tag-list{
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+    padding: 0;
+}
+.tags{
+    width: 30%;
+    height: 30%;
+    border: 1px solid black;
+    margin-right: 93px;
+}

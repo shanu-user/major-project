@@ -1,0 +1,13 @@
+.signup
+{
+    top: 31%;
+    right: 25%;
+    margin: 54px;
+    border-radius: 5px;
+    padding-left: 73px;
+    padding-right: 58px;
+    padding-bottom: 95px;
+    padding-top: 40px;
+    position: absolute;
+    border: 1px solid black;
+}
