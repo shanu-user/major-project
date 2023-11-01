@@ -4,3 +4,25 @@
     border: 1px solid black;
     
 }
+
+.wall-item{
+    /* border: 1px solid black; */
+    border-radius: 37px;
+    position: absolute;
+    left: 129px;
+    top: 108px;
+    width: 49%;
+    height: 67%;
+}
+
+.to-login{
+    width: 216px;
+    height: 55px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    position: absolute;
+    right: 348px;
+    bottom: 258px;
+    border-radius: 24px;
+    background-color: #00ff28ed;
+}

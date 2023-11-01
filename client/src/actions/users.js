@@ -1,6 +1,5 @@
 import * as api from '../api'
-import {fetchAllUsers} from "./users"
-import setCurrentUser from './currentUser.js'
+
 
 
 export const fetchAllUsers = () => async(dispatch) =>{

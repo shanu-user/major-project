@@ -1,26 +1,27 @@
 import React, {useState} from 'react'
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar/Navbar'
-import { FcMenu } from "react-icons/fc"
 import Sidebar from './components/Sidebar/Sidebar'
 import AllRoutes from './AllRoutes'
-function App() {
-  const [isok,setIsOk] = useState(false)
+// import { SocketProvider } from './Providers/Socket'
+import { FcMenu } from "react-icons/fc"
 
-  const handleMenu = () =>{
-    setIsOk(!isok)
-  }
+
+function App() {
+  const [isOk,setIsOk] = useState(false)
+
+    const handleMenu = () =>{
+        setIsOk(!isOk)
+    }
   return (
     <div className="App">
-      {/* <Navbar /> */}
-      <div className="sidebar">
-      <FcMenu onClick={handleMenu} size={20} style={{position: "absolute", left: 0}}/>
-        {/* Hospital App */}
+      {/* <SocketProvider> */}
+        <Navbar /> 
+        <FcMenu onClick={handleMenu} size={20} style={{position: "absolute", left: 0}}/>
         <br />
-        {isok && <Sidebar />}
-      </div>
-      <AllRoutes />
+        {isOk && <Sidebar />}
+        <AllRoutes />
+     {/*</SocketProvider> */}
     </div>
   );
 }

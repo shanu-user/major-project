@@ -1,0 +1,14 @@
+p.heading{
+    position: absolute;
+    font-size: 40px;
+    left: 110px;
+}
+
+section{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 726px;
+    display: flex;
+    left: 30px;
+    flex-direction: row;
+}

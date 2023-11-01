@@ -2,6 +2,7 @@ import React from 'react'
 import "./Files.css"
 import { FaFileUpload } from 'react-icons/fa'
 import { FaFile } from 'react-icons/fa6'
+
 // import { FaShare } from 'react-icons/fa6'
 
 const Files = () => {

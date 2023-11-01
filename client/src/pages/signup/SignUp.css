@@ -1,13 +1,38 @@
 .signup
 {
-    top: 31%;
-    right: 25%;
-    margin: 54px;
-    border-radius: 5px;
+    margin: 0px;
     padding-left: 73px;
     padding-right: 58px;
     padding-bottom: 95px;
     padding-top: 40px;
+    width: 858px;
     position: absolute;
+    position: fixed;
+    /* border: 1px solid black; */
+    top: 13%;
+    left: 9%;
+}
+
+.register-headers{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: space-between;   
+    /* border-bottom: 1px solid black; */
+}
+.page{
     border: 1px solid black;
+    border-radius: 5px;
+}
+
+.headers{
+    padding-left: 91px;
+    padding-right: 72px;
+    /* border-right: 1px solid black; */
+}
+
+.information{
+    padding: 40px;
 }
