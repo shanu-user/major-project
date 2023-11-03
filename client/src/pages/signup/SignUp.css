@@ -25,6 +25,8 @@
 .page{
     border: 1px solid black;
     border-radius: 5px;
+    height: 514px;
+    width: 1020px
 }
 
 .headers{

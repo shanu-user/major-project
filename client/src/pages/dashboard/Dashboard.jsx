@@ -1,22 +1,14 @@
-import React, {useState} from 'react'
+import React from 'react'
 import "./Dashboard.css"
-import logo from '../../assets/poster.jpeg'
-import { useNavigate } from 'react-router-dom'
+import {logo} from "../../assets/poster.png"
+
+
 
 const Dashboard = () => {
-
-  const navigate = useNavigate()
-
-  const getDirected = () => {
-    navigate('/login')
-  } 
-  
   return (
     <div className="dashboard">
-      {/*Dashboard*/}
-      <img src={logo} className="wall-item"/>
-      <p style={{width: 187, position: 'absolute', border: '1px solid black', right: 370, bottom: 396}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores aliquid, provident </p>
-      <button onClick={getDirected} className="to-login">Get started</button>
+        <p className="quote">There is hope, even when your brain tells you there isn't.</p>
+        <button className="to-login">Get Started</button>   
     </div>
   )
 }

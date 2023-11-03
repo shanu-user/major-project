@@ -1,28 +1,28 @@
-.sidebar{
-    position: absolute;
-    left: 0;
-    border: 1px solid black;
-    
+.dashboard{
+    background: url("../../assets/poster.png") no-repeat center center;
+    background-size: cover;
+    display: inline-block;
+    width: 204vh;
+    height: 95vh;
 }
 
-.wall-item{
-    /* border: 1px solid black; */
-    border-radius: 37px;
+.quote{
+    margin: 25px;
+    width: 20%;
     position: absolute;
-    left: 129px;
-    top: 108px;
-    width: 49%;
-    height: 67%;
+    height: 10%;
+    font-size: 24px;
+    right: 261px;
+    bottom: 345px;
 }
 
 .to-login{
-    width: 216px;
-    height: 55px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
     position: absolute;
+    bottom: 270px;
+    font-size: 23px;
+    background-color: green;
+    height: 7%;
+    border-radius: 10px;
+    width: 12%;
     right: 348px;
-    bottom: 258px;
-    border-radius: 24px;
-    background-color: #00ff28ed;
 }

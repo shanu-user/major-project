@@ -1,18 +1,38 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import {useNavigate} from 'react-router-dom'
-const Chat = () => {
+import { useSocket } from '../../Providers/Socket'
 
-  const navigate = useNavigate()
-  const getToVideoChat = () =>{
+const Chat = () => {
+  const { socket } = useSocket()
+
+
+  const [email, setEmail] = useState()
+  const [roomId, setRoomId] = useState()
+  const handleJoinRoom = () =>{
+    socket.emit('join-room', { emailId: email, roomId})
     navigate('/room')
   }
+
+  const handleRoomJoined = ({ roomId }) =>{
+    console.log('Room Joined', roomId)
+    navigate('/room')
+  }
+
+
+  useEffect(() => {
+    socket.on('joined-room', handleRoomJoined)
+  }, [socket, handleRoomJoined])
+
+
+  const navigate = useNavigate()
+  
   return (
     <div>
       Chat
       <br /><br />
-      <input type="text" placeholder="Enter your user name here"/><br /><br />
-      <input type="text" placeholder="Enter your pass-key" /><br /><br />
-      <button onClick={getToVideoChat}>Submit</button>
+      <input type="text" value={email} onChange={(e)=>setEmail(e.target.value)}placeholder="Enter your email here"/><br /><br />
+      <input type="text" value={roomId} onChange={e => setRoomId(e.target.value)}placeholder="Enter your room id" /><br /><br />
+      <button onClick={handleJoinRoom}>Submit</button>
     </div>
   )
 }

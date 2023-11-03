@@ -7,17 +7,19 @@ import {configureStore} from '@reduxjs/toolkit'
 import {BrowserRouter} from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
 import Reducer from './reducers'
-
+// import { SocketProvider } from './Providers/Socket'
 
 const store = configureStore({reducer: Reducer})
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+  {/* <SocketProvider> */}
     <Provider Provider store={store}>
       <BrowserRouter>
         <App />
       </BrowserRouter>
-      </Provider>
+    </Provider>
+  {/* </SocketProvider> */}
   </React.StrictMode>
 );
 

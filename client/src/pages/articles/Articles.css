@@ -4,11 +4,18 @@ p.heading{
     left: 110px;
 }
 
+.articles{
+
+}
+
 section{
     border: 1px solid black;
-    border-radius: 5px;
-    width: 726px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
     display: flex;
-    left: 30px;
-    flex-direction: row;
+    width: 808px;
+    margin: 37px;
+    left: 24%;
+
 }

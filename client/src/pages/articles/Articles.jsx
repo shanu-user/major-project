@@ -6,9 +6,6 @@ const Articles = () => {
   return (
     <div className="articles">
       <p className="heading">Articles</p>
-      <br />
-      <br /><br />
-      <br />
       <input type="text" placeholder="Enter topic name"/>
       <button><FcSearch /></button>
       <section>
