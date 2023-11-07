@@ -5,12 +5,14 @@ import "./Details.css"
 const Details = (props) => {
   return (
     <div className="details" style={{display:props.show==="details"?'block':'none'}}>
-        General Details
+        <p>General Details</p>
         <form>
         <label htmlFor="name">Name</label>
         <input type="text" name="name" /><br /><br />
         <label htmlFor="email">Email</label>        
-        <input type="text" name="email" /><br /><br />
+        <input type="text" name="email" onKeyUp={() =>{
+
+        }}/><br /><br />
         <label htmlFor="password">Password</label>        
         <input type="text" name="password"/><br /><br />
         <label htmlFor="age">Age</label>

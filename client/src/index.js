@@ -4,7 +4,9 @@ import './index.css';
 import App from './App';
 import {Provider} from 'react-redux'
 import {configureStore} from '@reduxjs/toolkit'
+// import Navbar from './components/Navbar/Navbar'
 import {BrowserRouter} from 'react-router-dom'
+import "./index.css"
 import reportWebVitals from './reportWebVitals';
 import Reducer from './reducers'
 // import { SocketProvider } from './Providers/Socket'

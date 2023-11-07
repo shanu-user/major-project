@@ -1,7 +1,7 @@
-p.heading{
+.heading{
     position: absolute;
     font-size: 40px;
-    left: 110px;
+    left: 210px;
 }
 
 .articles{
@@ -14,8 +14,31 @@ section{
     align-items: center;
     justify-content: center;
     display: flex;
+    top: 92px;
     width: 808px;
     margin: 37px;
-    left: 24%;
+    left: 59%;
+
+}
+
+.search-controls{
+    left: 919px;
+    position: relative;
+    top: 52px;
+    padding-top: 14px;
+    height: 41px;
+}
+
+.search-controls input{
+    margin-right: 15px;
+    width: 338px;
+    border-radius: 6px;
+    height: 33px;
+}
+
+.search-controls button{
+    width: 171px;
+    border-radius: 6px;
+    height: 33px;
 
 }

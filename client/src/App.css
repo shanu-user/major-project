@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  /* background: url('./assets/Front_Page_Image.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  overflow: hidden; */
+ 
 }
 
 .App-logo {
@@ -10,6 +16,7 @@
 .home_page{
   display: flex;
   flex-direction: row;
+  height: 798px;
 }
 
 

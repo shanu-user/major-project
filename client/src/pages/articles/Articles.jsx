@@ -6,8 +6,10 @@ const Articles = () => {
   return (
     <div className="articles">
       <p className="heading">Articles</p>
-      <input type="text" placeholder="Enter topic name"/>
-      <button><FcSearch /></button>
+      <div className="search-controls">
+        <input type="text" placeholder="Enter topic name"/>
+        <button><FcSearch /> Search</button>
+      </div>
       <section>
         <p>Understanding and Treating Anxiety Disorders</p>
         <Link to="https://www.psychologytoday.com/us/basics/anxiety">Disease link</Link>

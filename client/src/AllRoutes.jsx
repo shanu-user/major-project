@@ -8,13 +8,12 @@ import Login from './pages/login/Login'
 import Articles from './pages/articles/Articles'
 import Chat from './pages/chat/Chat'
 import Files from './pages/files/Files'
-// import { SocketProvider} from './Providers/Socket'
+
 //import Dashboard from './pages/Dashboard'
 
 
 const AllRoutes = () => {
   return (
-    // <SocketProvider>
       <Routes>
         <Route path="/" element={<Dashboard />}/>
         <Route path="/profile" element={<Profile />}/>
@@ -26,7 +25,6 @@ const AllRoutes = () => {
         <Route path="/room" element={<Room />}/>
         {/*<Route />*/}
       </Routes>
-    // </SocketProvider>
   )
 }
 

@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import "./Login.css"
-import image from '../../assets/login.jpeg'
 import { login } from '../../actions/auth'
 
 const Login = (props) => {
@@ -21,17 +20,17 @@ const Login = (props) => {
   return (
     <div className="login">
       {/* Login*/}
-      <img src={image} />
-      <div className="form-login">
-        <form onSubmit={(e) => handleSubmit(e)}>
-          <label htmlFor="email">Email</label>        
-          <input type="text" name="email" value={email} onChange={(e) => setEmail(e.target.value)}/><br /><br />
-          <label htmlFor="password">Password</label>        
-          <input type="text" name="password" value={password} onChange={(e) => setPassword(e.target.value)}/><br /><br />
-          <p>New here? <Link to='/signup'>Sign Up</Link></p>
-        </form>
-      </div>
-      
+      <label htmlFor="name" className="details_label">Username</label>
+      <input type="text" name="name" className="details_text"/>
+      <br /><br />
+      <label htmlFor="password" className="details_label">Password</label>
+      <input type="password" name="password"  className="details_text"/>
+      <br /><br /><br />
+      <button className="login_btn">Log in</button>
+      <p className="to_next_link">
+        New Here? &nbsp;
+        <Link to="/signup" style={{textDecoration: "none"}}>Sign up</Link>
+      </p>
     </div>
   )
 }
