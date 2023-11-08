@@ -1,18 +1,17 @@
 import React, { useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import "./Navbar.css"
-// import { FcMenu } from 'react-icons/fc'
 import { FcSearch } from 'react-icons/fc'
 
 
-const Navbar = ({handleMenu}) => {   
+const Navbar = () => {   
 
     const [isLogin, setIsLogin] = useState(false)
 
     return (
         <nav>
             <div className="navbar">
-                {/* <FcMenu onClick={handleMenu}/> */}
+                
                 <div className="navbar-1">
                     <Link className="nav_link" to="/articles">Articles</Link>
                     <Link className="nav_link" to="/chat">Chat</Link>

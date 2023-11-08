@@ -20,17 +20,36 @@ const SignUp = () => {
   return (
     <div className="signup">
       <div className="register-headers">
-        <div className="headers" onClick={()=>setShowVar("details")} style={{color: showVar==="details"&&textColor}}>Details</div>
+        <div className="headers" style={{color: showVar==="details"&&textColor}}>Details</div>
         <FaArrowRight style={{color: showVar==="details"&&textColor}}/>
-        <div className="headers" onClick={()=>setShowVar("symptoms")} style={{color: showVar === "symptoms"&&textColor}}>Symptoms</div>
+        <div className="headers" style={{color: showVar === "symptoms"&&textColor}}>Symptoms</div>
         <FaArrowRight style={{color: showVar === "symptoms"&&textColor}}/>
-        <div className="headers" onClick={()=>setShowVar("info")} style={{color: showVar === "info"&&textColor}}>Information</div>
+        <div className="headers" style={{color: showVar === "info"&&textColor}}>Information</div>
       {/* <FaArrowRight />*/}
       </div>
       <div className="page">
         <Details show={showVar}/>
         <Symptoms show={showVar}/>
         <Information show={showVar}/>
+        <br />
+        {(showVar === "symptoms" || showVar === "info") && 
+          <button onClick={()=>{
+            if(showVar === "symptoms")
+              setShowVar("details") 
+            else if(showVar === "info")
+              setShowVar("symptoms") 
+            
+          }}>&lt; Previous</button>          
+        }
+        {(showVar === "details" || showVar === "symptoms") &&
+          <button onClick={()=>{
+            if(showVar === "details")
+              setShowVar("symptoms") 
+            else if(showVar === "symptoms")
+              setShowVar("info") 
+            
+          }}>Next &gt;</button>
+        }
       </div>
     </div>
     )

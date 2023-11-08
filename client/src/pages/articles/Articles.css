@@ -1,7 +1,9 @@
 .heading{
     position: absolute;
-    font-size: 40px;
+    font-size: 61px;
     left: 210px;
+    font-weight: 400;
+    top: 124px;
 }
 
 .articles{

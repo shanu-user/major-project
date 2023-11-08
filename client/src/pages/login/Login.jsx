@@ -20,10 +20,12 @@ const Login = (props) => {
   return (
     <div className="login">
       {/* Login*/}
-      <label htmlFor="name" className="details_label">Username</label>
+      <label htmlFor="name" className="details_label">Email</label>
+      <span>*</span>
       <input type="text" name="name" className="details_text"/>
       <br /><br />
       <label htmlFor="password" className="details_label">Password</label>
+      <span>*</span>
       <input type="password" name="password"  className="details_text"/>
       <br /><br /><br />
       <button className="login_btn">Log in</button>

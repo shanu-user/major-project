@@ -5,3 +5,12 @@
     top: 90px;
     left: 94px;
 }
+
+.general-details{
+    border: 1px solid black;
+    position: absolute;
+    top: 36%;
+    left: 10%;
+    width: 300px;
+    height: 10%;
+}

@@ -15,6 +15,8 @@ const Details = (props) => {
         }}/><br /><br />
         <label htmlFor="password">Password</label>        
         <input type="text" name="password"/><br /><br />
+        <label htmlFor="r_password">Repeat Password</label>        
+        <input type="text" name="r_password"/><br /><br />
         <label htmlFor="age">Age</label>
         <input type="text" name="age" /><br /><br />
         <label htmlFor="gender">Gender</label>
@@ -23,8 +25,8 @@ const Details = (props) => {
           <option value="male">Male</option>
           <option value="female">Female</option>
         </select>
-        
         <br /><br />
+        
         </form>
     </div>
   )

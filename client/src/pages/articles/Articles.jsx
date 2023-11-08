@@ -3,6 +3,7 @@ import "./Articles.css"
 import { Link } from 'react-router-dom'
 import { FcSearch } from 'react-icons/fc'
 const Articles = () => {
+  
   return (
     <div className="articles">
       <p className="heading">Articles</p>
