@@ -4,6 +4,10 @@
     display: inline-block;
     width: 204vh;
     height: 95vh;
+    position: relative;
+    top: 295px;
+    left: 0px;
+    
 }
 
 .quote{

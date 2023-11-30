@@ -2,27 +2,31 @@ import React, { useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import "./Navbar.css"
 import { FcSearch } from 'react-icons/fc'
+import "bootstrap/dist/css/bootstrap.min.css"
+import { Button } from "react-bootstrap"
 
 
 const Navbar = () => {   
 
     const [isLogin, setIsLogin] = useState(false)
+    const navigate = useNavigate()
+
 
     return (
-        <nav>
-            <div className="navbar">
-                
-                <div className="navbar-1">
-                    <Link className="nav_link" to="/articles">Articles</Link>
-                    <Link className="nav_link" to="/chat">Chat</Link>
-                    <Link className="nav_link" to="/files">Files</Link>
-                </div>
-                <div className="navbar-2">
-                   <button className="btn_login">
-                    <Link className="nav_link" style={{color: 'white'}}>Log In</Link>
-                   </button> 
-                </div>
-            </div>
+        <nav class="navbar navbar-light w-auto" style={{backgroundColor: "rgba(217, 217, 217, 0.00)", height: 53}}>
+            
+            <ul className="navbar-nav mb-2 me-auto mb-lg-0" style={{display: "flex", flexDirection: "row"}}>
+                <li className="nav-item px-2">
+                    <Link className="nav-link" style={{fontFamily: "inter"}} to="/articles">Articles</Link>
+                </li>
+                <li className="nav-item px-2">
+                    <Link className="nav-link" style={{fontFamily: "inter"}} to="/chat">Chat</Link>
+                </li>
+                <li className="nav-item px-2">
+                    <Link className="nav-link" style={{fontFamily: "inter"}} to="/files">Files</Link>
+                </li>
+            </ul>
+            <button type="button" onClick={() => navigate('/login')}className="btn btn-warning" style={{fontFamily: "inter"}}>Log in</button>
         </nav>
     )    
     

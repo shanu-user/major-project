@@ -9,7 +9,7 @@ import Articles from './pages/articles/Articles'
 import Chat from './pages/chat/Chat'
 import Files from './pages/files/Files'
 
-//import Dashboard from './pages/Dashboard'
+
 
 
 const AllRoutes = () => {
@@ -23,7 +23,6 @@ const AllRoutes = () => {
         <Route path="/chat" element={<Chat />}/>
         <Route path="/files" element={<Files />}/>
         <Route path="/room" element={<Room />}/>
-        {/*<Route />*/}
       </Routes>
   )
 }

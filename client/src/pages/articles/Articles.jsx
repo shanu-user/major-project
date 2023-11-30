@@ -6,7 +6,7 @@ const Articles = () => {
   
   return (
     <div className="articles">
-      <p className="heading">Articles</p>
+      <h3>Articles</h3>
       <div className="search-controls">
         <input type="text" placeholder="Enter topic name"/>
         <button><FcSearch /> Search</button>

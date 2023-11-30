@@ -1,8 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import "./Dashboard.css"
-import {logo} from "../../assets/poster.png"
-
+import { Button } from "react-bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 
 const Dashboard = () => {
@@ -11,8 +11,9 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-        <p className="quote">There is hope, even when your brain tells you there isn't.</p>
-        <button className="to-login" onClick={() => navigate('/login')}>Get Started</button>   
+        <h3 className="d-flex flex-column align-items-center justify-content-center">There is hope, even when your brain tells you there isn't.</h3>
+        <br /><br />
+        <Button onClick={() => navigate('/login')}>Get Started</Button>
     </div>
   )
 }
