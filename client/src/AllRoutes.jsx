@@ -1,6 +1,6 @@
 import React from 'react'
 import {Routes, Route } from 'react-router-dom'
-import Room from './pages/chat/Room'
+// import Room from './pages/chat/Room'
 import Dashboard from './pages/dashboard/Dashboard'
 import Profile from './pages/Profile/Profile'
 import SignUp from './pages/signup/SignUp'
@@ -22,7 +22,7 @@ const AllRoutes = () => {
         <Route path="/articles" element={<Articles />}/>
         <Route path="/chat" element={<Chat />}/>
         <Route path="/files" element={<Files />}/>
-        <Route path="/room" element={<Room />}/>
+        {/* <Route path="/room" element={<Room />}/> */}
       </Routes>
   )
 }

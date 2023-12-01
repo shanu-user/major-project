@@ -26,16 +26,18 @@ const Login = (props) => {
     //   <label htmlFor="">Password</label>
     //   <input type="password" placeholder="Enter your password"/>
     // </div>
-    <form className="login">
-      <div className="form-group">
-        <label htmlFor="email">Email</label>
-        <input type="email" className="form-control" name="email" placeholder="Enter your email" />
+    <form className="login container">
+      <div className="form-group row">
+        <label htmlFor="email" className="col-3">Email</label>
+        <input type="email" className="form-control w-25 col-3" name="email" placeholder="Enter your email" />
       </div>
-      <div className="form-group">
-        <label htmlFor="password">Password</label>
-        <input type="password" className="form-control" name="password" placeholder="Enter your password" />
+      <br /><br /><br />
+      <div className="form-group row">
+        <label htmlFor="password" className="col-3">Password</label>
+        <input type="password" className="form-control w-25 col-3" name="password" placeholder="Enter your password" />
       </div>
-      <button type="submit" className="btn btn-primary btn-warning">Submit</button>
+      <br /><br />
+      <button type="submit" className="btn btn-primary btn-warning row">Submit</button>
     </form>
       // {/* Login*/}
       // <label htmlFor="name" className="details_label">Email</label>

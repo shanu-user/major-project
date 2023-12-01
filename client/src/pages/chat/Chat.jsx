@@ -1,38 +1,29 @@
 import React, { useState, useEffect } from 'react'
 import {useNavigate} from 'react-router-dom'
 import { useSocket } from '../../Providers/Socket'
+import "./Chat.css"
+import "bootstrap/dist/css/bootstrap.min.css"
+import Text from './Text'
+import Video from './Video'
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const Chat = () => {
-  const { socket } = useSocket()
-
-
-  const [email, setEmail] = useState()
-  const [roomId, setRoomId] = useState()
-  const handleJoinRoom = () =>{
-    socket.emit('join-room', { emailId: email, roomId})
-    navigate('/room')
-  }
-
-  const handleRoomJoined = ({ roomId }) =>{
-    console.log('Room Joined', roomId)
-    navigate('/room')
-  }
-
-
-  useEffect(() => {
-    socket.on('joined-room', handleRoomJoined)
-  }, [socket, handleRoomJoined])
-
 
   const navigate = useNavigate()
-  
-  return (
-    <div>
-      Chat
-      <br /><br />
-      <input type="text" value={email} onChange={(e)=>setEmail(e.target.value)}placeholder="Enter your email here"/><br /><br />
-      <input type="text" value={roomId} onChange={e => setRoomId(e.target.value)}placeholder="Enter your room id" /><br /><br />
-      <button onClick={handleJoinRoom}>Submit</button>
+  const [move, setMove] = useState(false)
+  return(
+    <div className="chat">
+      <div className="container">
+        <div className="chat-options mx-auto">
+          {
+            move? <div className={`text ${move ? 'moveLeft' : 'moveRight'}`} onClick={() => setMove(!move)}>Text</div> : <div className={`video ${move ? 'moveRight': 'moveLeft'}`} onClick={() => setMove(!move)}>Video</div>
+          }
+      </div>
+
+      </div>
+      {
+        move ? <Text /> : <Video /> 
+      }
     </div>
   )
 }
