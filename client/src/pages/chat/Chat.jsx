@@ -14,9 +14,9 @@ const Chat = () => {
   return(
     <div className="chat">
       <div className="container">
-        <div className="chat-options mx-auto">
+        <div className="chat-options mx-auto" onClick={() => setMove(!move)}>
           {
-            move? <div className={`text ${move ? 'moveLeft' : 'moveRight'}`} onClick={() => setMove(!move)}>Text</div> : <div className={`video ${move ? 'moveRight': 'moveLeft'}`} onClick={() => setMove(!move)}>Video</div>
+            move? <div className={`text ${move ? 'moveLeft' : 'moveRight'}`} >Text</div> : <div className={`video ${move ? 'moveRight': 'moveLeft'}`} >Video</div>
           }
       </div>
 

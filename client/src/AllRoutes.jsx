@@ -7,7 +7,7 @@ import SignUp from './pages/signup/SignUp'
 import Login from './pages/login/Login'
 import Articles from './pages/articles/Articles'
 import Chat from './pages/chat/Chat'
-import Files from './pages/files/Files'
+import Room from './pages/chat/Room'
 
 
 
@@ -21,7 +21,7 @@ const AllRoutes = () => {
         <Route path="/login" element={<Login />}/>
         <Route path="/articles" element={<Articles />}/>
         <Route path="/chat" element={<Chat />}/>
-        <Route path="/files" element={<Files />}/>
+        <Route path="/room" element={<Room />}/>
         {/* <Route path="/room" element={<Room />}/> */}
       </Routes>
   )

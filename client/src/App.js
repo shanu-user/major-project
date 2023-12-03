@@ -17,11 +17,11 @@ function App() {
   return (
     <div className="App img-responsive" style={{background: `url(front_img)`, backgroundSize: 'cover', backgroundPosition: 'fixed', overflow: 'hidden', backgroundRepeat: 'no-repeat'}}>
       <SocketProvider>
-      <Navbar />  
-      <div className="home_page">
-        <AllRoutes />
-      </div> 
-     </SocketProvider>
+        <Navbar />  
+        <div className="home_page">
+          <AllRoutes />
+        </div> 
+      </SocketProvider>
     </div>
   );
 }

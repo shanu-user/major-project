@@ -26,7 +26,7 @@ db.connect((err) => {
 })
 
 //Handling Socket Connections
-const io = new Server({
+const io = new Server(8000, {
   cors: true
 })
 
@@ -57,22 +57,25 @@ export default db
 
 
 //Handling socket communications
-const emailToSocketMapping = new Map()
+const emailToSocketMap = new Map()
+const socketidToEmailMap = new Map()
+
 
 io.on("connection", (socket) => {
-    console.log("New connection")
-    socket.on("join-room", (data) =>{
+    console.log("Socket connected", socket.id)
+    socket.on("room:join", (data) =>{
         const { roomId, email} = data
         console.log('User', email, 'Joined Room', roomId)
-        emailToSocketMapping.set(email, socket.id)
-        socket.join(roomId)
-        socket.emit('joined-room', { roomId })
-        socket.broadcast.to(roomId).emit('user-joined', {email})
+        emailToSocketMap.set(email, socket.id)
+        io.to(roomId).emit("user:joined", {email, id: socket.id})
+        socketidToEmailMap.set(socket.id, email)
+        io.to(socket.id).emit("room:join", data)
     })
 })
 
 const port = process.env.PORT || 5000
 
 
-app.listen(port, () => console.log("Server activated on port 8000"))
-io.listen(8001)
+app.listen(port, () => console.log(`Server activated on port ${port}`))
+
+

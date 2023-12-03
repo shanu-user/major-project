@@ -13,7 +13,7 @@ const Navbar = () => {
 
 
     return (
-        <nav class="navbar navbar-light w-auto" style={{backgroundColor: "rgba(217, 217, 217, 0.00)", height: 53}}>
+        <nav className="navbar navbar-light w-auto" style={{backgroundColor: "rgba(217, 217, 217, 0.00)", height: 53}}>
             
             <ul className="navbar-nav mb-2 me-auto mb-lg-0" style={{display: "flex", flexDirection: "row"}}>
                 <li className="nav-item px-2">
@@ -22,11 +22,9 @@ const Navbar = () => {
                 <li className="nav-item px-2">
                     <Link className="nav-link" style={{fontFamily: "inter"}} to="/chat">Chat</Link>
                 </li>
-                <li className="nav-item px-2">
-                    <Link className="nav-link" style={{fontFamily: "inter"}} to="/files">Files</Link>
-                </li>
             </ul>
-            <button type="button" onClick={() => navigate('/login')}className="btn btn-warning" style={{fontFamily: "inter"}}>Log in</button>
+            <Button type="button" onClick={() => navigate('/login')} className="btn btn-warning me-5" style={{fontFamily: 'inter'}}>Log in</Button>
+            
         </nav>
     )    
     
