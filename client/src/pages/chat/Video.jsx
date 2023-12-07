@@ -22,7 +22,7 @@ const Video = () => {
   const handleJoinRoom = useCallback((data) => {
     // e.preventDefault()
     const {email, room} = data
-    navigate(`/room/`)
+    navigate(`/room/${room}`)
   }, [navigate])
 
   useEffect(() => {

@@ -21,7 +21,7 @@ const AllRoutes = () => {
         <Route path="/login" element={<Login />}/>
         <Route path="/articles" element={<Articles />}/>
         <Route path="/chat" element={<Chat />}/>
-        <Route path="/room" element={<Room />}/>
+        <Route path="/room/:roomId" element={<Room />}/>
         {/* <Route path="/room" element={<Room />}/> */}
       </Routes>
   )

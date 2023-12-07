@@ -64,12 +64,21 @@ const socketidToEmailMap = new Map()
 io.on("connection", (socket) => {
     console.log("Socket connected", socket.id)
     socket.on("room:join", (data) =>{
-        const { roomId, email} = data
+        const { email, roomId } = data
         console.log('User', email, 'Joined Room', roomId)
         emailToSocketMap.set(email, socket.id)
-        io.to(roomId).emit("user:joined", {email, id: socket.id})
         socketidToEmailMap.set(socket.id, email)
+        io.to(roomId).emit("user:joined", {email, id: socket.id})
+        socket.join(roomId)
         io.to(socket.id).emit("room:join", data)
+    })
+
+    socket.on("user:call", ({to, offer}) => {
+      io.to(to).emit("incoming:call", {from: socket.id, offer})
+    })
+
+    socket.on("call:accepted", ({to, ans}) => { 
+      io.to(to).emit("call:accepted", {from: socket.id, ans})
     })
 })
 
