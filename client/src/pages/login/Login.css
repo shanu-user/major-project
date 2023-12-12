@@ -1,83 +1,14 @@
-.login
-{
-    width: 776px;
-    height: 416px;
-    border-radius: 16px;
-    position: relative;
-    background: rgba(255, 252, 252, 0.43);
-    top: 78px;
-    left: 333px;
-}
-
-
-.details_label{
-    position: relative;
-    left: 0px;
-    top: 15%;
-    width: 377px;
-    height: 100px;
+.login-form{
+    width: 574px;
+    height: 447px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    color: black;
-    text-align: center;
-    font-family: Inter;
-    flex-direction: column;
-    display: flex;
-    font-style: normal;
-    font-size: 29px;
-    font-weight: 300;
-    line-height: normal;
-    float: left;
-}
-
-.details_text{
-    display: flex;
-    font-size: 29px;
-    font-weight: 300;
-    flex-direction: column;
-    float: right;
-    border-radius: 15px;
-    position: relative;
-    top: 16px;
-    right: 3%;
-    width: 516px;
-    height: 69px;
-    color: black;
-    background: #D9D9D9;
-}
-
-.login_btn{
-    border-radius: 24px;
-    background: rgba(10, 138, 147, 0.61);
+    align-items: center;
+    bottom: 66px;
+    left: 29%;
     position: absolute;
-    bottom: 25%;
-    width: 243.441px;
-    left: 37%;
-    height: 70.231px;
-    flex-shrink: 0;
-    color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 34.359px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
-
+    border-radius: 12px;
+    background: rgba(99, 90, 208, 0.57);
 }
 
-.to_next_link{
-    font-size: 29px;
-    font-weight: 400;
-    left: 39%;
-    position: absolute;
-    bottom: 52px;
-    
-}
-
-.to_Signup{
-    font-size: 29px;
-    font-weight: 400;
-    position: absolute;
-    left: 39%;
-    bottom: 0;
-}

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import {useNavigate} from 'react-router-dom'
 import { useSocket } from '../../Providers/Socket'
 import "./Chat.css"
-import "bootstrap/dist/css/bootstrap.min.css"
 import Text from './Text'
 import Video from './Video'
 import "bootstrap/dist/css/bootstrap.min.css"
