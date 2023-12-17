@@ -6,16 +6,14 @@ import "./Information.css"
 const Information = (props) => {
   return (
     <div className="info" style={{display:props.show==="info"?'block':'none'}}>
-        <p>Information</p>
         <form className="information">
             <label htmlFor="name">Name</label>
-            <input type="text" /><br />
+            <input type="text" /><br /><br />
             <label htmlFor="age">Age</label>
-            <input type="text" /><br />
+            <input type="text" /><br /><br />
             <label htmlFor="gender">Gender</label>
-            <input type="radio" name="male" />Male
-            <input type="radio" name="female" />Female<br />
-            <input type="text" />
+            <input id="radio" type="radio" name="male" /><span>Male</span>
+            <input id="radio" type="radio" name="female" /><span>Female</span><br />
         </form>
     </div>
   )

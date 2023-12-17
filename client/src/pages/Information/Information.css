@@ -1,4 +1,4 @@
- label{
+label{
     display: flex;
     width: 592px;
     height: 30px;
@@ -28,17 +28,6 @@
     line-height: normal;
 }
 
-.info select{
-    width: 215px;
-    font-size: 38px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 400;
-    position: relative;
-    left: 45px;
-    height: 47px;
-    border-radius: 8px;
-}
 
 .info p{
     font-size: 36px;
@@ -49,3 +38,13 @@
     position: relative;
 }
 
+span{
+    font-size: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#gender{
+    margin-right: 25px;
+}

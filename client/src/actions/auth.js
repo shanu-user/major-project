@@ -1,5 +1,5 @@
 import * as api from '../api'
-import {fetchAllUsers} from "./users"
+// import {fetchAllUsers} from "./users"
 import setCurrentUser from './currentUser.js'
 
 
@@ -13,7 +13,6 @@ export const signup=(authData)=> async(dispatch)=> {
         // dispatch({type: 'AUTH', data})
         // authReducer({type: 'AUTH'},data)
         dispatch({type: 'AUTH', data})
-        dispatch(fetchAllUsers())
     }catch(err){
         console.log(err)
     }

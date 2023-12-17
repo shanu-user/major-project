@@ -1,0 +1,80 @@
+form label{
+    display: flex;
+    width: 592px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    top: 31px;
+    position: relative;
+    left: -128px;
+    height: 0px;
+    margin-right: 51px;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+form input{
+    color: black;
+    position: relative;
+    right: -25%;
+    width: 46%;
+    font-size: 20px;
+    bottom: -12px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 12px;
+    line-height: normal;
+}
+
+form select{
+    width: 215px;
+    font-size: 28px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    left: 117px;
+    height: 34px;
+    bottom: -11px;
+    border-radius: 8px;
+}
+
+.register{
+    margin: 0px;
+    padding-left: 73px;
+    padding-right: 58px;
+    padding-bottom: 95px;
+    padding-top: 40px;
+    width: 858px;
+    position: absolute;
+    position: fixed;
+    /* border: 1px solid black; */
+    top: 20%;
+    left: 12%;
+}
+
+
+.signup-form{
+    width: 574px;
+    height: 504px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 102px;
+    line-height: 1;
+    left: 26%;
+    position: relative;
+    border-radius: 12px;
+    background: rgba(99, 90, 208, 0.57);
+}
+
+button{
+    border-radius: 8px;
+    font-family: Inter;
+}

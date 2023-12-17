@@ -8,6 +8,7 @@ import Login from './pages/login/Login'
 import Articles from './pages/articles/Articles'
 import Chat from './pages/chat/Chat'
 import Room from './pages/chat/Room'
+import Register from './pages/Register/Register'
 
 
 
@@ -18,6 +19,7 @@ const AllRoutes = () => {
         <Route path="/" element={<Dashboard />}/>
         <Route path="/profile" element={<Profile />}/>
         <Route path="/signup" element={<SignUp />}/>
+        <Route path="/Register" element={<Register />}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/articles" element={<Articles />}/>
         <Route path="/chat" element={<Chat />}/>
