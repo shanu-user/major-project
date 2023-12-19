@@ -13,20 +13,30 @@ const handleSubmit = (e) => {
 const Text = () => {
   return (
     <div className="container">
-      <div className="text-container w-75 h-25 mx-auto">
+      <div className="text-container w-75 h-75 mx-auto">
         <div className="sender">
           <img src={sender_img} className="profile_img"/>
           <p>lorem</p>
         </div>
-        <br /><br />
+        <br /><br /><br /><br />
         <div className="receiver">
           <img src={receiver_img} className="profile_img"/>
           <p>lorem</p>
         </div>
-        <br />
-        <div className="text-portion" onSubmit={handleSubmit}>
+        <br /><br /><br /><br />
+        <div className="sender">
+          <img src={sender_img} className="profile_img"/>
+          <p>lorem</p>
+        </div>
+        <br /><br /><br /><br />
+        <div className="receiver">
+          <img src={receiver_img} className="profile_img"/>
+          <p>lorem</p>
+        </div>
+        
+        <div className="text-portion d-flex align-items-center justify-content-center" >
           <input type="text" className="w-auto h-auto mr-5 text-input"/>
-          <FaCircleArrowRight onClick={handleSubmit} style={{width: 72, height: 63}}/>
+          <FaCircleArrowRight onClick={handleSubmit} style={{width: 72, height: 35}}/>
         </div>
       </div>
     </div>

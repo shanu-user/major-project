@@ -6,10 +6,11 @@ const Articles = () => {
   
   return (
     <div className="articles">
-      <h3>Articles</h3>
-      <div className="search-controls">
-        <input type="text" placeholder="Enter topic name"/>
-        <button><FcSearch /> Search</button>
+      <div className="d-flex flex-row">
+        <div className="search-controls">
+          <input type="text" placeholder="Enter topic name"/>
+          <button><FcSearch /> Search</button>
+        </div>
       </div>
       <section>
         <p>Understanding and Treating Anxiety Disorders</p>

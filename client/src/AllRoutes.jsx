@@ -18,8 +18,8 @@ const AllRoutes = () => {
       <Routes>
         <Route path="/" element={<Dashboard />}/>
         <Route path="/profile" element={<Profile />}/>
-        <Route path="/signup" element={<SignUp />}/>
-        <Route path="/Register" element={<Register />}/>
+        <Route path="/register" element={<SignUp />}/>
+        <Route path="/signup" element={<Register />}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/articles" element={<Articles />}/>
         <Route path="/chat" element={<Chat />}/>

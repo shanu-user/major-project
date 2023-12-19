@@ -11,8 +11,9 @@ const Register = (props) => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [age, setAge] = useState(0)
-  const [gender, setGender] = useState("")
+  const [gender, setGender] = useState("Male")
   const [country, setCountry] = useState("")
+  
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
@@ -21,8 +22,8 @@ const Register = (props) => {
     e.preventDefault()
     if(!name && !email && !password && !gender && !country)
       alert("Please enter the complete details")
+    navigate('/signup')
     dispatch(signup({name, email, password, age, gender, country}))
-    navigate('/')
   }, [name, email, password, age, gender, country, dispatch, navigate])
 
 
@@ -51,7 +52,7 @@ const Register = (props) => {
         <label htmlFor="gender">Gender</label>
         <select name="gender" onChange={(e) => {
           console.log(e.value)
-          setGender(e.value)
+          setGender(e.target.value)
         }} className="gender">
           <option value="male">Male</option>
           <option value="female">Female</option>

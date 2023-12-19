@@ -6,9 +6,7 @@
     top: 124px;
 }
 
-.articles{
 
-}
 
 section{
     border: 1px solid black;
@@ -16,15 +14,15 @@ section{
     align-items: center;
     justify-content: center;
     display: flex;
-    top: 92px;
+    top: 105px;
     width: 808px;
     margin: 37px;
-    left: 59%;
+    left: 19%;
 
 }
 
 .search-controls{
-    left: 919px;
+    left: 532px;
     position: relative;
     top: 52px;
     padding-top: 14px;

@@ -37,10 +37,11 @@ const Video = () => {
       <form onSubmit={handleSubmitForm}>
         <label htmlFor="email">Email</label>
         <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <br /><br />
         <label htmlFor="room">Room Number</label>
         <input type="text" name="room" value={room} onChange={(e) => setRoom(e.target.value)}/>
         <br /><br />
-        <button type="submit">Join</button>
+        <button type="submit" className="btn btn-warning">Join</button>
       </form>
     </div>
   )

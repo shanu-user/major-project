@@ -20,7 +20,10 @@ const Login = () => {
           <label htmlFor="password" className="form-label">Password</label><br /><br />
           <input type="password" name="password" className="form-control w-50" placeholder="Enter your password"/>
         </div>
-        <button type="submit">Login</button>
+        <br /><br /><br />
+        <button type="submit" className="btn btn-primary">Login</button>
+        <br /><br />
+        <p>New here? <button className="btn btn-link" onClick={() => navigate('/signup')}>Sign up</button></p>
       </form>
     </div>
   )

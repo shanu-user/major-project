@@ -23,8 +23,7 @@ const signup = async(req, res) =>{
     // }catch(err){
     //     res.status(500).json(err)
     // }    
-    
-    const sql = "INSERT INTO user_details (`name`,`email`,`password`,`age`,`gender`,`country`,`signup_date`) VALUES (?)"
+    const sql = "INSERT INTO user_details (`name`,`email`,`password`,`age`,`gender`,`country`,`signup_date`) VALUES (?,?,?,?,?,?,?)"
     const values = [
         req.body.name,
         req.body.email,
@@ -40,6 +39,7 @@ const signup = async(req, res) =>{
         }
         return res.status(200).json(data)
     })
+    
 }
 
 export {login, signup}
